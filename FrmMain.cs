@@ -9,8 +9,7 @@ namespace WFA230110_2
         {
             InitializeComponent();
 
-            CtrlLogIn = new(this);
-
+            CtrlLogIn = new();
             CtrlLogIn.Location = new()
             {
                 X = (pnlMain.Width - CtrlLogIn.Width) / 2,
@@ -18,7 +17,6 @@ namespace WFA230110_2
             };
 
             pnlMain.Controls.Add(CtrlLogIn);
-
             CtrlLogIn.LogInEvent += OnCtrlLogInLogInEvent;
         }
 
